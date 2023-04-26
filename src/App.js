@@ -1,9 +1,16 @@
+import { Routes, Route } from 'react-router';
 import './App.css';
+import HomePage from './Pages/HomePage/HomePage';
+import Header from './components/Header/Header';
 
 function App() {
   return (
     <div >
-      123
+      <Header/> 
+        <Routes>
+          <Route path='/' element={<HomePage/>}/>
+          
+        </Routes>
     </div>
   );
 }
